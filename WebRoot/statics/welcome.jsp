@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.io.Writer" %><%--
   Created by IntelliJ IDEA.
   User: 黄宇
   Date: 2017/5/8
@@ -11,9 +11,15 @@
     <title>welCome</title>
 </head>
 <body>
-    <%
-
-    %>
-    ${id}
+    <%--<%
+        Writer writer = response.getWriter();
+        writer.append("<h1 style='text-align: center;'>haha</h1>");
+        writer.flush();
+        writer.close();
+    %>--%>
+    <div>
+    ID:${id}<br/>
+    Name:${name}
+    </div>
 </body>
 </html>
