@@ -21,6 +21,7 @@
         http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
-
+        <property name="name" value="druidDataSource"/>
+        <property name="url" value=""/>
     </bean>
 </beans>
